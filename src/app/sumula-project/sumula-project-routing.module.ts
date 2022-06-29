@@ -23,8 +23,8 @@ const routes: Routes = [
       },
       {
         path: 'cadastro-jogador',
-        loadChildren: () => import('./player-registration/player-registration-routing.module')
-          .then(m => m.PlayerRegistrationRoutingModule)
+        loadChildren: () => import('./player-registration/player-registration.module')
+          .then(m => m.PlayerRegistrationModule)
       },
       {
         path: '',
