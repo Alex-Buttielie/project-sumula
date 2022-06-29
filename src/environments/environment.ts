@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  version: '1.0.0',
-  URL: 'http://localhost:8085/'
+  //version: '1.0.0',
+  //URL: 'http://localhost:8085/'
 };
 
 /*
