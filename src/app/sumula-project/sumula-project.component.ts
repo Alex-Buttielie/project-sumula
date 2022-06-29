@@ -14,11 +14,11 @@ export class SumulaProjectComponent implements OnInit {
   constructor(
     private router: Router,
     ) { 
-      if (environment.production) {
-        this.logo = '/project-sumula/assets/ESCUDO.png';
-      } else {
+      //if (environment.production) {
+      //  this.logo = '/project-sumula/assets/ESCUDO.png';
+      //} else {
         this.logo = '../../assets/ESCUDO.png';
-      }
+     // }
     }
 
   ngOnInit(): void {
