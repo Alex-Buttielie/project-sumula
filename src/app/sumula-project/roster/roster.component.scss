@@ -1,7 +1,3 @@
-table {
-    width: 100%;
-}
-
 .form_wrapper {
     background: rgb(255, 255, 255);
     width: 750px;
@@ -14,32 +10,84 @@ table {
     z-index: 1;
 }
 
-.mat-column-celular {
-    padding-right: 50px;
-    text-align: center;
+.title_container {
+    margin: 5%;
+    zoom: 200%;
+    font-weight: bold;
 }
 
-.mat-column-name {
-    padding-right: 24px;
-    text-align: center;
+.form_wrapper-box {
+    background: rgb(255, 255, 255);
+    width: 750px;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 10% auto 0;
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
 
-.mat-column-position {
-    padding-right: 24px;
-    text-align: center;
+
+.star-content {
+    color: rgb(218, 218, 4);
+    left: 25%;
+    top: 84%;
+    position: absolute;
 }
 
-.mat-column-email {
-    padding-right: 24px;
-    text-align: center;
+.player-name {
+    font-size: 200%;
+    font-weight: bold;
+    top: 15%;
+    left: 25%;
+    position: absolute;
 }
-.mat-column-qntEstrelas {
-    padding-right: 24px;
-    text-align: center;
+
+.player-numberList {
+    top: 70%;
+    right: -3%;
+    position: absolute;
+    width: 100px;
+    background: #085796;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
 }
-.mat-column-idade {
-    padding-right: 24px;
-    text-align: center;
+
+.player-position {
+    top: 63%;
+    margin-left: 21.6%;
+    position: absolute;
+}
+
+.player-img {
+    margin-left: -85%;
+    border-radius: 50%;
+    zoom: 120%;
+    display: inline-block;
+    height: 100px;
+    object-fit: cover;
+   
+}
+
+.player-surname {
+    top: 40%;
+    font-size: 200%;
+    left: 25%;
+    position: absolute;
+}
+
+.number-list {
+    font-size: 600%;
+    color: white;
+    position: absolute;
+    top: 35%;
+    right: 25%;
 }
 
 @media screen and (max-width: 575px) {
@@ -51,7 +99,56 @@ table {
         width: 80%;
     }
 
+    .form_wrapper-box {
+        zoom: 60%;
+    }
+
+    .player-surname {
+        top: 45%;
+        font-size: 250%;
+        left: 45%;
+        position: absolute;
+    }
+
     .form_wrapper .col_half {
         width: 80%;
     }
+
+    .player-img {
+        width: 45%;
+        margin-left: -60%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .player-position {
+        top: 60%;
+        margin-left: 41%;
+        zoom: 200%;
+        left: 4%;
+    }
+
+    .player-name {
+        left: 45%;
+        top: 20%;
+        zoom: 140%;
+        position: absolute;
+    }
+
+    .player-numberList {
+        top: 80%;
+        right: -1%;
+        position: absolute;
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        height: 100px;
+    }
+
+    .star-content {
+        top: 90%;
+        left: 45%;
+        position: absolute;
+    }
+
 }
