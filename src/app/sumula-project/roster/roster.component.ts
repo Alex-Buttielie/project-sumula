@@ -28,11 +28,11 @@ export class RosterComponent implements OnInit {
   displayedColumns = ['name', 'celular', 'email', 'position', 'qntEstrelas', 'idade'];
   
   constructor() {
-    if (environment.production) {
-      this.logo = '/project-sumula/assets/ESCUDO.png';
-    } else {
+   // if (environment.production) {
+   //   this.logo = '/project-sumula/assets/ESCUDO.png';
+   // } else {
       this.logo = '../../assets/ESCUDO.png';
-    }
+   // }
    }
 
   ngOnInit(): void {
