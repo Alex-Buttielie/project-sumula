@@ -1,0 +1,57 @@
+table {
+    width: 100%;
+}
+
+.form_wrapper {
+    background: rgb(255, 255, 255);
+    width: 750px;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 10% auto 0;
+    position: relative;
+    z-index: 1;
+}
+
+.mat-column-celular {
+    padding-right: 50px;
+    text-align: center;
+}
+
+.mat-column-name {
+    padding-right: 24px;
+    text-align: center;
+}
+
+.mat-column-position {
+    padding-right: 24px;
+    text-align: center;
+}
+
+.mat-column-email {
+    padding-right: 24px;
+    text-align: center;
+}
+.mat-column-qntEstrelas {
+    padding-right: 24px;
+    text-align: center;
+}
+.mat-column-idade {
+    padding-right: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+    .div-logo {
+        display: none;
+    }
+
+    .form_wrapper {
+        width: 80%;
+    }
+
+    .form_wrapper .col_half {
+        width: 80%;
+    }
+}

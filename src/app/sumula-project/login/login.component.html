@@ -1,0 +1,57 @@
+<div class="form_wrapper">
+  <div class="row clearfix">
+    <div align="center">
+      <img width="100" [src]="logo">
+    </div>
+    <div class="title_container">
+      <small>
+        <h2>Entrar na {{dadosEmpresa?.nomeEmpresa}}</h2>
+      </small>
+    </div>
+    <div align="center">
+      <div class="col_half formulario">
+        <form [formGroup]="formGroup">
+          <mat-form-field style="margin-left: -14%;" class="example-form-field" appearance="fill"
+            *ngIf="formGroup.get('isRecoveryKey')?.value != true">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="E-mail" required="true">
+          </mat-form-field>
+          <mat-form-field class="form-field-email-recovery" appearance="fill"
+            *ngIf="formGroup.get('isRecoveryKey')?.value === true">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="emailRecovery" placeholder="E-mail de cadastro para recuperar senha"
+              required="true">
+          </mat-form-field>
+          <mat-form-field style="margin-left: -14%;" class="example-form-field" appearance="fill"
+            *ngIf="formGroup.get('isRecoveryKey')?.value != true">
+            <mat-label>Senha</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required="true">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </form>
+        <button *ngIf="formGroup.get('isRecoveryKey')?.value != true" mat-raised-button
+          style="background: #488ff8; color: white;" (click)="validateSumulaUser()" align="center" class="btn-acessar">
+          Acessar
+        </button>
+        <button *ngIf="formGroup.get('isRecoveryKey')?.value != true" mat-raised-button
+          style="background: #0066ff; margin-top: 15px; color: white;" (click)="onRecoveryKey()" align="center"
+          class="btn-acessar">
+          Recuperar senha
+        </button>
+        <button *ngIf="formGroup.get('isRecoveryKey')?.value === true" mat-raised-button
+          style="background: #488ff8; margin-top: 15px; color: white;" (click)="recoveryKey()" align="center"
+          class="btn-acessar">
+          Recuperar agora
+        </button>
+        <button *ngIf="formGroup.get('isRecoveryKey')?.value === true" mat-raised-button
+          style="background: #0066ff; margin-top: 15px; color: white;" (click)="comeBack()" align="center"
+          class="btn-acessar">
+          Voltar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

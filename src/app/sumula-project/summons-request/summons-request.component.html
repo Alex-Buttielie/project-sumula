@@ -1,0 +1,31 @@
+<div class="form_wrapper">
+    <div class="row clearfix">
+        <div class="row container flex flex-wrap" align="center">
+            <div style="margin-block-end: 15px;">
+                <img width="100" [src]="logo">
+            </div>
+            <form [formGroup]="formGroup">
+                <mat-form-field 
+                class="example-full-width"
+                 appearance="fill">
+                    <mat-label>Jogador</mat-label>
+                    <input type="text"
+                     matInput [formControl]="myControl" 
+                     placeholder="Nome jogador"
+                    [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete" 
+                    [displayWith]="displayFn">
+                        <mat-option
+                         *ngFor="let option of listOfPlayers | async" [value]="option">
+                            {{option.name}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </form>
+            <button *ngIf="formGroup.get('isRecoveryKey')?.value != true" mat-raised-button
+                style="background: #0066ff; color: white;" (click)="addToList()" align="center" class="btn-acessar">
+                Pedir convocação
+            </button>
+        </div>
+    </div>
+</div>
