@@ -9,7 +9,7 @@ export class ConfigService {
   constructor() { }
 
   get url(): string {
-    return  this.urlInner || environment.URL;
+    return  'http://localhost:8085/';
   }
 
   set url(value) {
