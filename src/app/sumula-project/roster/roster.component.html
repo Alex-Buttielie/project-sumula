@@ -1,28 +1,30 @@
-<div class="form_wrapper" align="center">
-    <div class="row clearfix">
-        <div>
-            <img width="30%" [src]="logo">
+<div class="body">
+    <div class="form_wrapper" align="center">
+        <div >
+            <div>
+                <img width="30%" [src]="logo">
+            </div>
         </div>
-    </div>
-    <div class="title_container">
-        <small>
-            <h2>Convocados da semana</h2>
-        </small>
-    </div>
+        <div class="title_container">
+            <small>
+                <h2>Convocados da semana</h2>
+            </small>
+        </div>
 
-    <div class="row clearfix">
-        <div class="roster" *ngFor="let player of dataSource$">
-            <div class="form_wrapper-box">
-                <img class="player-img" [src]="player.caminhofoto">
-                <h1 class="player-name">{{player.name}}</h1>
-                <h1 class="player-surname">{{player.surname}}</h1>
-                <h2 class="player-position">{{player.position}}</h2>
-                <div class="player-numberList">
-                    <h1 class="number-list">{{player.numberList}}</h1>
-                </div>
-                <div class="star-content" style="display: flex;">
-                    <div *ngFor="let qntEstrelas of getQntEstrelas(player)">
-                        <mat-icon class="star">stars</mat-icon>
+        <div >
+            <div class="roster" *ngFor="let player of dataSource$">
+                <div class="form_wrapper-box">
+                    <img class="player-img" [src]="player.caminhofoto">
+                    <h1 class="player-name">{{player.name}}</h1>
+                    <h1 class="player-surname">{{player.surname}}</h1>
+                    <h2 class="player-position">{{player.position}}</h2>
+                    <div class="player-numberList">
+                        <h1 class="number-list">{{player.numberList}}</h1>
+                    </div>
+                    <div class="star-content" style="display: flex;">
+                        <div *ngFor="let qntEstrelas of getQntEstrelas(player)">
+                            <mat-icon class="star">stars</mat-icon>
+                        </div>
                     </div>
                 </div>
             </div>

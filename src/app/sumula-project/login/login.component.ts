@@ -30,13 +30,14 @@ export class LoginComponent implements OnInit {
     private dialog: MatDialog,
     private route: Router,
     private loginService: LoginService) { 
-      this.versao = environment.version;
+      //this.versao = environment.version;
+      this.versao = '1.0.0';
 
-    if (environment.production) {
-      this.logo = '/project-sumula/assets/ESCUDO.png';
-    } else {
+   // if (environment.production) {
+    //  this.logo = '/project-sumula/assets/ESCUDO.png';
+    //} else {
       this.logo = '../../assets/ESCUDO.png';
-    }
+    //}
     this.buildForm(formBuilder);
     }
 
