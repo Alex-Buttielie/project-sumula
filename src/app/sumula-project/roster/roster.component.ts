@@ -28,9 +28,9 @@ export class RosterComponent implements OnInit {
 
   dataSource$: Player [] = [
     {name: 'Alex Buttielie',surname: 'Leleco', celular: '(62)999429-1748', position: 'Meia', qntEstrelas: 5, idade: 21, email: 'buttielle3@gmail.com', numberList: 1, caminhofoto: '../../assets/alex.png'},
-    {name: 'Peterson Macedo',surname: 'Petin', celular: '(62)999429-1748', position: 'Zagueiro', qntEstrelas: 5, idade: 21, email: 'buttielle3@gmail.com', numberList: 2, caminhofoto: '../../assets/petin.png'},
-    {name: 'Victor Hugo',surname:'Vitu', celular: '(62)999429-1748', position: 'Lateral Esquero', qntEstrelas: 5, idade: 21, email: 'buttielle3@gmail.com', numberList: 4, caminhofoto: '../../assets/victor.png'},
-    {name: 'Juliano', surname: 'Jubs', celular: '(62)999429-1748', position: 'Lateral Direito', qntEstrelas: 5, idade: 21, email: 'buttielle3@gmail.com', numberList: 5, caminhofoto: '../../assets/juliano.png'}
+    {name: 'Peterson Macedo',surname: 'Petin', celular: '(62)999429-1748', position: 'Zagueiro', qntEstrelas: 3, idade: 21, email: 'buttielle3@gmail.com', numberList: 2, caminhofoto: '../../assets/petin.png'},
+    {name: 'Victor Hugo',surname:'Vitu', celular: '(62)999429-1748', position: 'Lateral Esquerdo', qntEstrelas: 2, idade: 21, email: 'buttielle3@gmail.com', numberList: 4, caminhofoto: '../../assets/victor.png'},
+    {name: 'Juliano', surname: 'Jubs', celular: '(62)999429-1748', position: 'Lateral Direito', qntEstrelas: 4, idade: 21, email: 'buttielle3@gmail.com', numberList: 5, caminhofoto: '../../assets/juliano.png'}
   ];
 
   displayedColumns = ['name', 'celular', 'email', 'position', 'qntEstrelas', 'idade'];

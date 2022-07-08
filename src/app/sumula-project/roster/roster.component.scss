@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+  font-family:Ubuntu;
+}
+
 .form_wrapper {
     background: rgb(255, 255, 255);
     width: 750px;
@@ -10,33 +20,27 @@
     z-index: 1;
 }
 
-.title_container {
-    margin: 5%;
-    zoom: 200%;
-    font-weight: bold;
-}
-
 .form_wrapper-box {
-    background: rgb(255, 255, 255);
     width: 750px;
-    height: auto;
     max-width: 100%;
-    box-sizing: border-box;
     padding: 25px;
-    margin: 10% auto 0;
     position: relative;
-    z-index: 1;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
 
+.title_container {
+    margin: 5%;
+    zoom: 200%;
+    font-weight: bold;
+}
 
 .star-content {
     color: rgb(218, 218, 4);
     left: 25%;
-    top: 84%;
+    top: 80%;
     position: absolute;
 }
 
@@ -60,7 +64,7 @@
 }
 
 .player-position {
-    top: 63%;
+    top: 55%;
     margin-left: 21.6%;
     position: absolute;
 }
@@ -76,9 +80,10 @@
 }
 
 .player-surname {
-    top: 40%;
-    font-size: 200%;
+    top: 37%;
+    font-size: 150%;
     left: 25%;
+    font-weight: bold;
     position: absolute;
 }
 
@@ -86,7 +91,7 @@
     font-size: 600%;
     color: white;
     position: absolute;
-    top: 35%;
+    top: 25%;
     right: 25%;
 }
 
@@ -96,16 +101,29 @@
     }
 
     .form_wrapper {
-        width: 80%;
+        background: rgb(255, 255, 255);
+        width: 80%;  
+        padding: 0%;
+        position: relative;
     }
-
+    
+    .form_wrapper-box {
+        width: 600px;
+        max-width: 100%;
+        padding: 25px;
+        position: relative;
+        -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
     .form_wrapper-box {
         zoom: 60%;
     }
 
     .player-surname {
-        top: 45%;
-        font-size: 250%;
+        top: 33.5%;
+        font-size: 200%;
         left: 45%;
         position: absolute;
     }
@@ -122,21 +140,21 @@
     }
 
     .player-position {
-        top: 60%;
+        top: 50%;
         margin-left: 41%;
-        zoom: 200%;
+        zoom: 150%;
         left: 4%;
     }
 
     .player-name {
         left: 45%;
-        top: 20%;
-        zoom: 140%;
-        position: absolute;
+        top: 13%;
+        zoom: 110%;
+        display: flex;
     }
 
     .player-numberList {
-        top: 80%;
+        top: 70%;
         right: -1%;
         position: absolute;
         width: 100px;
@@ -146,9 +164,12 @@
     }
 
     .star-content {
-        top: 90%;
+        top: 80%;
         left: 45%;
         position: absolute;
+    }
+    .number-list{
+        top: 25%;
     }
 
 }
