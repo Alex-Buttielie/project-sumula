@@ -18,7 +18,7 @@ import { SucessDialogComponent } from './sucess-dialog/sucess-dialog.component';
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { MatTableModule } from '@angular/material/table';
-
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
   declarations: [
     CustomInputDateComponent,
@@ -42,7 +42,10 @@ import { MatTableModule } from '@angular/material/table';
     NgxMaskModule.forRoot(),
     MatDialogModule,
     MatAutocompleteModule, 
-    MatTableModule
+    MatTableModule,
+    MatRadioModule
+
+    
   ],
   exports: [
     FormsModule,
@@ -63,7 +66,8 @@ import { MatTableModule } from '@angular/material/table';
     SucessDialogComponent, 
     ErrorDialogComponent,
     MatAutocompleteModule, 
-    MatTableModule
+    MatTableModule,
+    MatRadioModule
   ]
 })
 export class CoreModule { }

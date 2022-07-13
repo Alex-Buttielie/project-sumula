@@ -5,5 +5,195 @@ h4,
 h5,
 h6 {
   margin: 8px 0;
-  font-family:Ubuntu;
+  font-family: Ubuntu;
+}
+
+.row {
+  zoom: 5%;
+}
+
+.mat-raised-button {
+  zoom: 5%;
+}
+#kick{
+  left: 14%;
+  right: 29;
+  opacity: 75%;
+  top: 4px;
+  display: block;
+
+}
+.form_wrapper {
+  background: rgb(255, 255, 255);
+  width: 750px;
+  height: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 10% auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+.form_wrapper-box {
+  width: 750px;
+  max-width: 100%;
+  padding: 25px;
+  position: relative;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.title_container {
+  margin: 5%;
+  zoom: 200%;
+  font-weight: bold;
+}
+
+.star-content {
+  color: rgb(218, 218, 4);
+  left: 25%;
+  top: 80%;
+  position: absolute;
+}
+
+.player-name {
+  font-size: 200%;
+  font-weight: bold;
+  top: 15%;
+  left: 25%;
+  position: absolute;
+}
+
+.player-numberList {
+  top: 70%;
+  right: -3%;
+  position: absolute;
+  width: 100px;
+  background: #085796;
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+}
+
+.player-position {
+  top: 55%;
+  margin-left: 21.6%;
+  position: absolute;
+}
+
+.player-img {
+  margin-left: -85%;
+  border-radius: 50%;
+  zoom: 120%;
+  display: inline-block;
+  height: 100px;
+  object-fit: cover;
+
+}
+
+.player-surname {
+  top: 37%;
+  font-size: 150%;
+  left: 25%;
+  font-weight: bold;
+  position: absolute;
+}
+
+.number-list {
+  font-size: 600%;
+  color: white;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+}
+
+@media screen and (max-width: 575px) {
+  .div-logo {
+    display: none;
+  }
+
+  .form_wrapper {
+    background: rgb(255, 255, 255);
+    width: 80%;
+    padding: 0%;
+    position: relative;
+  }
+
+  .form_wrapper-box {
+    width: 600px;
+    max-width: 100%;
+    padding: 25px;
+    position: relative;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+
+  .form_wrapper-box {
+    zoom: 60%;
+  }
+
+  .player-surname {
+    top: 33.5%;
+    font-size: 200%;
+    left: 45%;
+    position: absolute;
+  }
+
+  .form_wrapper .col_half {
+    width: 80%;
+  }
+
+  .player-img {
+    width: 45%;
+    margin-left: -60%;
+    width: 40%;
+    height: 40%;
+  }
+
+  .player-position {
+    top: 50%;
+    margin-left: 41%;
+    zoom: 150%;
+    left: 4%;
+  }
+
+  .player-name {
+    left: 45%;
+    top: 13%;
+    zoom: 110%;
+    display: flex;
+  }
+
+  .player-numberList {
+    top: 70%;
+    right: -1%;
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+  }
+
+  .star-content {
+    top: 80%;
+    left: 45%;
+    position: absolute;
+  }
+
+  .number-list {
+    top: 25%;
+  }
+
+  #kick{
+    right: 19%;
+    left: 0%;
+    margin-top: 5%;
+    display: block;
+  }
+
 }

@@ -1,5 +1,240 @@
-<div class="form_wrapper">
-    <div class="row clearfix">
-        <p>player-registration works!</p>
+<HEAD>
+    <script src="player-registration.component.ts"></script>
+</HEAD>
+<div class="form_wrapper" align="center">
+    <div>
+        <img width="100" [src]="soon">
     </div>
+    <div class="title_container">
+        <small>
+            <h2>Cadastrar Jogador</h2>
+        </small>
+    </div>
+    <form [formGroup]="formGroup">
+
+        <mat-form-field class="pd-col-6">
+            <div class="col-sm-6">
+                <a>
+                    <input matInput type="text" required="true" placeholder="Nome" formControlName="name">
+                </a>
+            </div>
+        </mat-form-field>
+
+        <mat-form-field class="pd-col-6">
+            <div class="col-sm-6">
+                <a>
+                    <input matInput type="text" required="true" placeholder="Apelido" formControlName="nickname">
+                </a>
+            </div>
+        </mat-form-field>
+        <div class="pd-col-6 col-sm-6">
+            <app-custom-input-date placeholder="Data nascimento" formControlName="birth">
+            </app-custom-input-date>
+        </div>
+        <mat-form-field class="pd-col-6">
+            <div class="col-sm-6">
+                <a>
+                    <input matInput placeholder="Nº telefone" type="text" required="true" formControlName="fone">
+                </a>
+            </div>
+        </mat-form-field>
+        <mat-form-field class="pd-col-6">
+            <div class="col-sm-6">
+                <a>
+                    <input matInput placeholder="Email" type="text" required="true" formControlName="email">
+                </a>
+            </div>
+        </mat-form-field>
+        <div class="pd-col-6 col-sm-6">
+            <mat-form-field class="pd-componente">
+                <mat-label>Posicao</mat-label>
+                <mat-select formControlName="position">
+                    <mat-option>--</mat-option>
+                    <mat-option *ngFor="let position of listPositions" [value]="position.value">
+                        {{position.description}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="example-button-row col-sm-12" id="button_consultar">
+            <a id="kick">
+                Chute:
+            </a>
+            <button mat-raised-button color="" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img [src]="star1" id="s1">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img [src]="star2" id="s2">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img [src]="star3" id="s3">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img [src]="star4" id="s4">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img [src]="star5" id="s5">
+                </a>
+            </button>
+        </div>
+        <div class="example-button-row col-sm-3" id="button_consultar">
+            <a id="kick">
+                Marcação:
+            </a>
+            <button mat-raised-button color="" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img [src]="star1" id="s1">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img [src]="star2" id="s2">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img [src]="star3" id="s3">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img [src]="star4" id="s4">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img [src]="star5" id="s5">
+                </a>
+            </button>
+        </div>
+        <div class="example-button-row col-sm-12" id="button_consultar">
+            <a id="kick">
+                Passe:
+            </a>
+            <button mat-raised-button color="" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img [src]="star1" id="s1">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img [src]="star2" id="s2">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img [src]="star3" id="s3">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img [src]="star4" id="s4">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img [src]="star5" id="s5">
+                </a>
+            </button>
+        </div>
+        <div class="example-button-row col-sm-12" id="button_consultar">
+            <a id="kick">
+                Corrida:
+            </a>
+            <button mat-raised-button color="" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img [src]="star1" id="s1">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img [src]="star2" id="s2">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img [src]="star3" id="s3">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img [src]="star4" id="s4">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img [src]="star5" id="s5">
+                </a>
+            </button>
+        </div>
+        <div class="example-button-row col-sm-12" id="button_consultar">
+            <a id="kick">
+                Drible:
+            </a>
+            <button mat-raised-button color="" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img [src]="star1" id="s1">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img [src]="star2" id="s2">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img [src]="star3" id="s3">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img [src]="star4" id="s4">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img [src]="star5" id="s5">
+                </a>
+            </button>
+        </div>
+        <div class="example-button-row col-sm-12" id="button_consultar">
+            <a id="kick">
+                Raça:
+            </a>
+            <button mat-raised-button color="" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img [src]="star1" id="s1">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img [src]="star2" id="s2">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img [src]="star3" id="s3">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img [src]="star4" id="s4">
+                </a>
+            </button>
+            <button mat-raised-button color="" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img [src]="star5" id="s5">
+                </a>
+            </button>
+        </div>
+    </form>
 </div>

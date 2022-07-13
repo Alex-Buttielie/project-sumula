@@ -22,7 +22,7 @@ const routes: Routes = [
           .then(m => m.RosterModule)
       },
       {
-        path: 'cadastro-jogador',
+        path: 'cadastrar-jogador',
         loadChildren: () => import('./player-registration/player-registration.module')
           .then(m => m.PlayerRegistrationModule)
       },
