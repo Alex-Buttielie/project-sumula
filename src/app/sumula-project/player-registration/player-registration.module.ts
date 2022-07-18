@@ -15,16 +15,9 @@ import { LoginRoutingModule } from '../login/login-routing.module';
 @NgModule({
   declarations: [PlayerRegistrationComponent],
   imports: [
-    CommonModule,
     PlayerRegistrationRoutingModule, 
-    FormsModule, 
-    CoreModule, 
-    MatSelectModule,
-    MatFormFieldModule, 
-    MatInputModule, 
-    MatButtonModule, 
-    MatIconModule, 
-    LoginRoutingModule 
+    LoginRoutingModule,
+    CoreModule
   ]
 })
 export class PlayerRegistrationModule { }

@@ -38,11 +38,14 @@ body {
   h3,
   h4,
   h5,
-  h6 {
+  h6, 
+  p, 
+  a, 
+  i {
     margin: 8px 0;
-  
+    font-family: Ubuntu;
   }
-
+  
   p {
     margin: 0;
   }

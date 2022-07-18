@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatSelectModule } from '@angular/material/select';
-import { LoginRoutingModule } from './login-routing.module';
-import { LoginService } from '../service';
+import { MenuRoutingModule } from './menu-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { CoreModule } from 'src/app/core/core.module';
+import { MenuComponent } from './menu.component';
 import { MatIconModule } from '@angular/material/icon';
-import { LoginComponent } from './login.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [MenuComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -23,7 +25,9 @@ import { LoginComponent } from './login.component';
     MatInputModule,
     MatButtonModule,
     MatIconModule, 
-    LoginRoutingModule
-  ], 
+    MenuRoutingModule, 
+    MatSidenavModule, 
+    MatDividerModule
+  ]
 })
-export class LoginModule { }
+export class MenuModule { }

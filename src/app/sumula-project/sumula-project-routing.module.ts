@@ -12,12 +12,12 @@ const routes: Routes = [
           .then(m => m.LoginModule)
       },
       {
-        path: 'realizar-convocao',
+        path: 'convocar',
         loadChildren: () => import('./summons-request/summons-request.module')
           .then(m => m.SummonsRequestModule)
       },
       {
-        path: 'lista-convocados',
+        path: 'convocados',
         loadChildren: () => import('./roster/roster.module')
           .then(m => m.RosterModule)
       },
@@ -25,6 +25,11 @@ const routes: Routes = [
         path: 'cadastrar-jogador',
         loadChildren: () => import('./player-registration/player-registration.module')
           .then(m => m.PlayerRegistrationModule)
+      },
+      {
+        path: 'menu',
+        loadChildren: () => import('./menu/menu.module')
+          .then(m => m.MenuModule)
       },
       {
         path: '',

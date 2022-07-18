@@ -1,0 +1,63 @@
+<div class="form_wrapper">
+    <mat-toolbar>
+
+            <button class="align-toobal" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+                <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+                <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+            </button>
+            <a id="title-terceiro-tempo">Terceiro Tempo</a>
+
+    </mat-toolbar>
+
+    <mat-sidenav-container>
+
+        <mat-sidenav #sidenav="matSidenav">
+            <img [src]="logo" />
+            <h2>Terceiro tempo</h2>
+            <h2>Súmula</h2>
+
+            <button mat-button class="menu-button" routerLink="../menu">
+                <mat-icon>home</mat-icon>
+                <span>Início</span>
+            </button>
+            <br>
+            <button mat-button class="menu-button" routerLink="../cadastrar-jogador">
+                <mat-icon>person_add</mat-icon>
+                <a>Cadastrar Jogador</a>
+            </button>
+            <br>
+            <button mat-button class="menu-button" routerLink="/profile">
+                <mat-icon>layers</mat-icon>
+                <span>Sorteio Semanal</span>
+            </button>
+            <br>
+            <button mat-button class="menu-button" routerLink="../convocados">
+                <mat-icon>list</mat-icon>
+                <span>Convocados da Semana</span>
+            </button>
+            <br>
+            <button mat-button class="menu-button" routerLink="/profile">
+                <mat-icon>person</mat-icon>
+                <span>Usuário Logado</span>
+            </button>
+            <br>
+            <button mat-button class="menu-button" routerLink="/about">
+                <mat-icon>info</mat-icon>
+                <span>Informações</span>
+            </button>
+            <br>
+            <button mat-button class="menu-button" routerLink="/help">
+                <mat-icon>help</mat-icon>
+                <span>Ajuda</span>
+            </button>
+            <br>
+
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content">
+                <img width="320" class="fundo" [src]="logo" />
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

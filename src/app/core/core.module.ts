@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -19,6 +19,12 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { MatTableModule } from '@angular/material/table';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
     CustomInputDateComponent,
@@ -43,9 +49,14 @@ import {MatRadioModule} from '@angular/material/radio';
     MatDialogModule,
     MatAutocompleteModule, 
     MatTableModule,
-    MatRadioModule
-
-    
+    MatRadioModule, 
+    MatToolbarModule, 
+    MatIconModule,
+    MatSelectModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatButtonModule, 
+    MatIconModule
   ],
   exports: [
     FormsModule,
@@ -67,7 +78,14 @@ import {MatRadioModule} from '@angular/material/radio';
     ErrorDialogComponent,
     MatAutocompleteModule, 
     MatTableModule,
-    MatRadioModule
+    MatRadioModule, 
+    MatToolbarModule, 
+    MatIconModule, 
+    MatSelectModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatButtonModule, 
+    MatIconModule
   ]
 })
 export class CoreModule { }
