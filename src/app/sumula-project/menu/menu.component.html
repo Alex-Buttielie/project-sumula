@@ -6,9 +6,7 @@
                 <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
             </button>
             <a id="title-terceiro-tempo">Terceiro Tempo</a>
-
     </mat-toolbar>
-
     <mat-sidenav-container>
 
         <mat-sidenav #sidenav="matSidenav">
@@ -51,13 +49,6 @@
                 <span>Ajuda</span>
             </button>
             <br>
-
         </mat-sidenav>
-        <mat-sidenav-content>
-            <div class="content">
-                <img width="320" class="fundo" [src]="logo" />
-                <router-outlet></router-outlet>
-            </div>
-        </mat-sidenav-content>
     </mat-sidenav-container>
 </div>

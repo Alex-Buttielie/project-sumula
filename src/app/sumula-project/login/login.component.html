@@ -32,26 +32,27 @@
             </button>
           </mat-form-field>
         </form>
+        <div>
         <button *ngIf="formGroup.get('isRecoveryKey')?.value != true" mat-raised-button
-          style="background: #488ff8; color: white;" (click)="validateSumulaUser()" align="center" class="btn-acessar">
+          style="background: #0066ff; color: white;" (click)="validateSumulaUser()" align="center" class="btn-acessar">
           Acessar
         </button>
         <button *ngIf="formGroup.get('isRecoveryKey')?.value != true" mat-raised-button
-          style="background: #0066ff; margin-top: 15px; color: white;" (click)="onRecoveryKey()" align="center"
+          style="background: #002b5c; margin-top: 15px; color: white;" (click)="onRecoveryKey()" align="center"
           class="btn-acessar">
           Recuperar senha
         </button>
         <button *ngIf="formGroup.get('isRecoveryKey')?.value === true" mat-raised-button
-          style="background: #488ff8; margin-top: 15px; color: white;" (click)="recoveryKey()" align="center"
+          style="background: #0066ff; margin-top: 15px; color: white;" (click)="recoveryKey()" align="center"
           class="btn-acessar">
           Recuperar agora
         </button>
         <button *ngIf="formGroup.get('isRecoveryKey')?.value === true" mat-raised-button
-          style="background: #0066ff; margin-top: 15px; color: white;" (click)="comeBack()" align="center"
+          style="background: #002b5c; margin-top: 15px; color: white;" (click)="comeBack()" align="center"
           class="btn-acessar">
           Voltar
         </button>
-        
+        </div>
       </div>
     </div>
   </div>

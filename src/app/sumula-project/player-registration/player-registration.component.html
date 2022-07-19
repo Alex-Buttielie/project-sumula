@@ -1,4 +1,4 @@
-<div class="form_wrapper" align="center">
+<div class="form_wrapper-body" align="center">
     <div>
         <img width="100" [src]="soon">
     </div>
@@ -9,10 +9,26 @@
     </div>
     <form [formGroup]="formGroup">
 
+        
         <mat-form-field class="pd-col-6">
             <div class="col-sm-6">
                 <a>
-                    <input matInput type="text" required="true" placeholder="Nome" formControlName="name">
+                    <input matInput type="text"
+                     required="true"
+                      placeholder="Nome" 
+                      formControlName="name">
+                </a>
+            </div>
+        </mat-form-field>
+        
+        <mat-form-field class="pd-col-6">
+            <div class="col-sm-6">
+                <a>
+                    <input
+                     matInput type="text" 
+                     required="true" 
+                     placeholder="Apelido" 
+                     formControlName="nickname">
                 </a>
             </div>
         </mat-form-field>
@@ -20,28 +36,32 @@
         <mat-form-field class="pd-col-6">
             <div class="col-sm-6">
                 <a>
-                    <input matInput type="text" required="true" placeholder="Apelido" formControlName="nickname">
+                    <input
+                     matInput placeholder="Nº telefone" 
+                     type="text" required="true" 
+                     formControlName="fone">
                 </a>
             </div>
         </mat-form-field>
+        <mat-form-field class="pd-col-6">
+            
+            <div class="col-sm-6">
+                <a>
+                    <input
+                     matInput placeholder="Email" 
+                     type="text" required="true"
+                      formControlName="email">
+                </a>
+            </div>
+        </mat-form-field>
+
         <div class="pd-col-6 col-sm-6">
-            <app-custom-input-date placeholder="Data nascimento" formControlName="birth">
+            <app-custom-input-date 
+             placeholder="Data nascimento"
+            formControlName="birth">
             </app-custom-input-date>
         </div>
-        <mat-form-field class="pd-col-6">
-            <div class="col-sm-6">
-                <a>
-                    <input matInput placeholder="Nº telefone" type="text" required="true" formControlName="fone">
-                </a>
-            </div>
-        </mat-form-field>
-        <mat-form-field class="pd-col-6">
-            <div class="col-sm-6">
-                <a>
-                    <input matInput placeholder="Email" type="text" required="true" formControlName="email">
-                </a>
-            </div>
-        </mat-form-field>
+
         <div class="pd-col-6 col-sm-6">
             <mat-form-field class="pd-componente">
                 <mat-label>Posicao</mat-label>
@@ -53,186 +73,193 @@
                 </mat-select>
             </mat-form-field>
         </div>
-        <div class="example-button-row col-sm-12" >
-            <a id="kick">
-                Chute:
-            </a>
-            <button  color="white" (click)="avaliar(1)" class="btn-acessar">
+
+        <div class="example-button-row col-sm-12">
+
+            <a id="kick">Chute:</a>
+
+            <button color="white" (click)="avaliar(1)" class="btn-acessar">
                 <a>
-                    <img [src]="star1">
-                </a>
-            </button>
-            <button  color="white" (click)="avaliar(2)" class="btn-acessar">
-                <a>
-                    <img [src]="star2">
-                </a>
-            </button>
-            <button  color="white" (click)="avaliar(3)" class="btn-acessar">
-                <a>
-                    <img [src]="star3">
-                </a>
-            </button>
-            <button  color="white" (click)="avaliar(4)" class="btn-acessar">
-                <a>
-                    <img [src]="star4">
-                </a>
-            </button>
-            <button  color="white" (click)="avaliar(5)" class="btn-acessar">
-                <a>
-                    <img [src]="star5" >
-                </a>
-            </button>
-        </div>
-        <div class="example-button-row col-sm-3" id="button_consultar">
-            <a id="kick">
-                Marcação:
-            </a>
-            <button  color="white" (click)="avaliar(1)" class="btn-acessar">
-                <a>
-                    <img [src]="star1" id="s1">
+                    <img width="30" [src]="star1">
                 </a>
             </button>
             <button color="white" (click)="avaliar(2)" class="btn-acessar">
                 <a>
-                    <img [src]="star2" id="s2">
+                    <img width="30" [src]="star2">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(3)" class="btn-acessar">
+            <button color="white" (click)="avaliar(3)" class="btn-acessar">
                 <a>
-                    <img [src]="star3" id="s3">
+                    <img width="30" [src]="star3">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(4)" class="btn-acessar">
+            <button color="white" (click)="avaliar(4)" class="btn-acessar">
                 <a>
-                    <img [src]="star4" id="s4">
+                    <img width="30" [src]="star4">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(5)" class="btn-acessar">
+            <button color="white" (click)="avaliar(5)" class="btn-acessar">
                 <a>
-                    <img [src]="star5" id="s5">
+                    <img width="30" [src]="star5">
                 </a>
             </button>
-        </div>
-        <div class="example-button-row col-sm-12" id="button_consultar">
+
+
+
+            <a id="kick">
+                Marcação:
+            </a>
+
+            <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                <a>
+                    <img width="30" [src]="star1" id="s1">
+                </a>
+            </button>
+            <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                <a>
+                    <img width="30" [src]="star2" id="s2">
+                </a>
+            </button>
+            <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                <a>
+                    <img width="30" [src]="star3" id="s3">
+                </a>
+            </button>
+            <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                <a>
+                    <img width="30" [src]="star4" id="s4">
+                </a>
+            </button>
+            <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                <a>
+                    <img width="30" [src]="star5" id="s5">
+                </a>
+            </button>
+
+
+
+
             <a id="kick">
                 Passe:
             </a>
-            <button  color="white" (click)="avaliar(1)" class="btn-acessar">
+
+            <button color="white" (click)="avaliar(1)" class="btn-acessar">
                 <a>
-                    <img [src]="star1" id="s1">
+                    <img width="30" [src]="star1" id="s1">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(2)" class="btn-acessar">
+            <button color="white" (click)="avaliar(2)" class="btn-acessar">
                 <a>
-                    <img [src]="star2" id="s2">
+                    <img width="30" [src]="star2" id="s2">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(3)" class="btn-acessar">
+            <button color="white" (click)="avaliar(3)" class="btn-acessar">
                 <a>
-                    <img [src]="star3" id="s3">
+                    <img width="30" [src]="star3" id="s3">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(4)" class="btn-acessar">
+            <button color="white" (click)="avaliar(4)" class="btn-acessar">
                 <a>
-                    <img [src]="star4" id="s4">
+                    <img width="30" [src]="star4" id="s4">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(5)" class="btn-acessar">
+            <button color="white" (click)="avaliar(5)" class="btn-acessar">
                 <a>
-                    <img [src]="star5" id="s5">
+                    <img width="30" [src]="star5" id="s5">
                 </a>
             </button>
-        </div>
-        <div class="example-button-row col-sm-12" id="button_consultar">
+
+
+
             <a id="kick">
                 Corrida:
             </a>
-            <button  color="white" (click)="avaliar(1)" class="btn-acessar">
+
+            <button color="white" (click)="avaliar(1)" class="btn-acessar">
                 <a>
-                    <img [src]="star1" id="s1">
+                    <img width="30" [src]="star1" id="s1">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(2)" class="btn-acessar">
+            <button color="white" (click)="avaliar(2)" class="btn-acessar">
                 <a>
-                    <img [src]="star2" id="s2">
+                    <img width="30" [src]="star2" id="s2">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(3)" class="btn-acessar">
+            <button color="white" (click)="avaliar(3)" class="btn-acessar">
                 <a>
-                    <img [src]="star3" id="s3">
+                    <img width="30" [src]="star3" id="s3">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(4)" class="btn-acessar">
+            <button color="white" (click)="avaliar(4)" class="btn-acessar">
                 <a>
-                    <img [src]="star4" id="s4">
+                    <img width="30" [src]="star4" id="s4">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(5)" class="btn-acessar">
+            <button color="white" (click)="avaliar(5)" class="btn-acessar">
                 <a>
-                    <img [src]="star5" id="s5">
+                    <img width="30" [src]="star5" id="s5">
                 </a>
             </button>
-        </div>
-        <div class="example-button-row col-sm-12" id="button_consultar">
+
             <a id="kick">
                 Drible:
             </a>
-            <button  color="white" (click)="avaliar(1)" class="btn-acessar">
+
+            <button color="white" (click)="avaliar(1)" class="btn-acessar">
                 <a>
-                    <img [src]="star1" id="s1">
+                    <img width="30" [src]="star1" id="s1">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(2)" class="btn-acessar">
+            <button color="white" (click)="avaliar(2)" class="btn-acessar">
                 <a>
-                    <img [src]="star2" id="s2">
+                    <img width="30" [src]="star2" id="s2">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(3)" class="btn-acessar">
+            <button color="white" (click)="avaliar(3)" class="btn-acessar">
                 <a>
-                    <img [src]="star3" id="s3">
+                    <img width="30" [src]="star3" id="s3">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(4)" class="btn-acessar">
+            <button color="white" (click)="avaliar(4)" class="btn-acessar">
                 <a>
-                    <img [src]="star4" id="s4">
+                    <img width="30" [src]="star4" id="s4">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(5)" class="btn-acessar">
+            <button color="white" (click)="avaliar(5)" class="btn-acessar">
                 <a>
-                    <img [src]="star5" id="s5">
+                    <img width="30" [src]="star5" id="s5">
                 </a>
             </button>
-        </div>
-        <div class="example-button-row col-sm-12" id="button_consultar">
+
             <a id="kick">
                 Raça:
             </a>
-            <button  color="white" (click)="avaliar(1)" class="btn-acessar">
+
+            <button color="white" (click)="avaliar(1)" class="btn-acessar">
                 <a>
-                    <img [src]="star1" id="s1">
+                    <img width="30" [src]="star1" id="s1">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(2)" class="btn-acessar">
+            <button color="white" (click)="avaliar(2)" class="btn-acessar">
                 <a>
-                    <img [src]="star2" id="s2">
+                    <img width="30" [src]="star2" id="s2">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(3)" class="btn-acessar">
+            <button color="white" (click)="avaliar(3)" class="btn-acessar">
                 <a>
-                    <img [src]="star3" id="s3">
+                    <img width="30" [src]="star3" id="s3">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(4)" class="btn-acessar">
+            <button color="white" (click)="avaliar(4)" class="btn-acessar">
                 <a>
-                    <img [src]="star4" id="s4">
+                    <img width="30" [src]="star4" id="s4">
                 </a>
             </button>
-            <button  color="white" (click)="avaliar(5)" class="btn-acessar">
+            <button color="white" (click)="avaliar(5)" class="btn-acessar">
                 <a>
-                    <img [src]="star5" id="s5">
+                    <img width="30" [src]="star5" id="s5">
                 </a>
             </button>
         </div>
     </form>
-    <router-outlet></router-outlet>
 </div>
