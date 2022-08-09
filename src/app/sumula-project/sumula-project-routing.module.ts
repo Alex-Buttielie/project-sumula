@@ -7,9 +7,9 @@ const routes: Routes = [
     path: '', component: SumulaProjectComponent,
     children: [
       {
-        path: 'login',
-        loadChildren: () => import('./login/login.module')
-          .then(m => m.LoginModule)
+        path: 'votacao',
+        loadChildren: () => import('./vote/vote.module')
+          .then(m => m.VoteModule)
       },
       {
         path: 'convocar',

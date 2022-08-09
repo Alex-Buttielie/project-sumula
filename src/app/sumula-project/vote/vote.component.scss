@@ -1,0 +1,148 @@
+.form_wrapper {
+    background: rgb(255, 255, 255);
+    width: 500px;
+    height: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 10% auto 0;
+    position: relative;
+    z-index: 1;
+}
+
+.form_wrapper-box {
+    width: 750px;
+    max-width: 100%;
+    height: auto;
+    zoom: 60%;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.player-img {
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    object-fit: cover;
+}
+
+.player-name {
+    font-size: 150%;
+    font-weight: bold;
+    top: 15%;
+    left: 50%;
+    position: absolute;
+}
+
+.player-surname {
+    top: 35%;
+    font-size: 135%;
+    left: 50%;
+    font-weight: bold;
+    position: absolute;
+}
+
+.player-position {
+    top: 55%;
+    margin-left: 21.6%;
+    position: absolute;
+    left: 28.5%;
+}
+
+.number-list {
+    font-size: 600%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+.title_container {
+    padding: 5%;
+    zoom: 120%;
+    font-weight: bold;
+
+}
+
+.btn-acessar {
+    zoom: 100%;
+    opacity: 70%;
+    border: #ffffff;
+    background-color: white;
+}
+
+.button {
+    top: 15%;
+    position: relative;
+    zoom: 160%;
+    opacity: 70%;
+    border: #ffffff;
+    background-color: white;
+}
+
+#kick {
+    font-size: 180%;
+    left: 1%;
+    right: 29%;
+    opacity: 75%;
+    top: 0px;
+    position: relative;
+}
+
+.roster {
+    display: flex;
+}
+
+.star-content {
+    color: rgb(218, 218, 4);
+    left: 25%;
+    top: 80%;
+    position: absolute;
+}
+
+.example-button-row {
+    position: relative;
+}
+
+@media screen and (max-width: 575px) {
+    .div-logo {
+        display: none;
+    }
+
+    .form_wrapper {
+        width: 360px;
+    }
+
+    .form_wrapper .col_half {
+        width: 80%;
+    }
+
+    // .form_wrapper-box {
+    //     zoom: 40%;
+    // }
+
+    .player-surname {
+        top: 12%;
+        left: 48.5%;
+        font-size: 170%;
+        position: absolute;
+    }
+
+    .player-position {
+        top: 18%;
+        margin-left: 41%;
+        zoom: 120%;
+        left: 8%;
+    }
+
+    .player-name {
+        left: 48%;
+        top: 5%;
+        font-size: 170%;
+        zoom: 110%;
+        display: flex;
+    }
+
+    
+}

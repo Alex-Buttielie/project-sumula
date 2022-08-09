@@ -7,8 +7,7 @@ import { ErrorDialogComponent } from 'src/app/core/error-dialog/error-dialog.com
 import { LoadingSpinnerComponent } from 'src/app/core/loading-spinner/loading-spinner.component';
 import { SucessDialogComponent } from 'src/app/core/sucess-dialog/sucess-dialog.component';
 import { LoadingService } from 'src/app/shared/service';
-import { environment } from 'src/environments/environment';
-import { AuthUserService, LoginService } from '../service';
+import { AuthUserService, LoginService } from '../sumula-project/service';
 
 @Component({
   selector: 'app-login',

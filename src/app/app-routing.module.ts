@@ -8,7 +8,12 @@ const routes: Routes = [
       .then(m => m.SumulaProjectModule)
   }, 
   {
-    path: '', pathMatch: 'full', redirectTo: 'sumula-project'
+    path: 'login',
+    loadChildren: () => import('./login/login-routing.module')
+      .then(m => m.LoginRoutingModule)
+  }, 
+  {
+    path: '', pathMatch: 'full', redirectTo: 'login'
   }
 ];
 

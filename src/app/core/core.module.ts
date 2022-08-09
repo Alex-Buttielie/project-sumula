@@ -23,7 +23,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule, 
     MatInputModule, 
     MatButtonModule, 
-    MatIconModule
+    MatIconModule, 
+    MatPaginatorModule
+    
   ],
   exports: [
     FormsModule,
@@ -85,7 +87,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule, 
     MatInputModule, 
     MatButtonModule, 
-    MatIconModule
+    MatIconModule, 
+    MatPaginatorModule
   ]
 })
 export class CoreModule { }

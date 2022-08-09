@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { LoginModule } from './login/login.module';
 
 registerLocaleData(localePt);
 
@@ -25,7 +26,8 @@ registerLocaleData(localePt);
     MatSnackBarModule,
     HttpClientModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule, 
+    LoginModule
   ],
   providers: [
     {

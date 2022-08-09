@@ -9,7 +9,7 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { LoginRoutingModule } from '../login/login-routing.module';
+import { LoginRoutingModule } from '../../login/login-routing.module';
 
 
 @NgModule({

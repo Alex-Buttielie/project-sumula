@@ -1,3 +1,16 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p, 
+a, 
+i {
+  margin: 8px 0;
+  font-family: Ubuntu;
+}
+
 .form_wrapper {
     background: rgb(255, 255, 255);
     width: 500px;
@@ -30,11 +43,6 @@
     padding: 0 15px;
     box-sizing: border-box;
 }
-
-/*.formulario {
-    height: 230px;
-    border-left: 1px solid #ccc;
-}*/
 
 .btn-acessar {
     width: 100%;

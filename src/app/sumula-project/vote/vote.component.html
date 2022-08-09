@@ -1,0 +1,221 @@
+<div class="form_wrapper" align="center">
+    <div class="title_container">
+        <small>
+            <h1 style="font-family: Ubuntu;">Avaliação</h1>
+        </small>
+    </div>
+
+
+    <div >
+        <img class="player-img" [src]="player.caminhofoto">
+        <h1 style="font-family: Ubuntu;">{{player.name}}</h1>
+        <h1 style="font-family: Ubuntu;">{{player.surname}}</h1>
+        <h2 style="font-family: Ubuntu;">{{player.position}}</h2>
+    </div>
+
+    <div class="roster" >
+        <button color="white" (click)="next()" class="button">
+            <mat-icon>
+                keyboard_arrow_left
+            </mat-icon>
+        </button>
+        <div class="form_wrapper-box">
+            <div style="display: flex;" class="col-sm-12">
+
+                <a id="kick">Chute:</a>
+
+                <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star1">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star2">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star3">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star4">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star5">
+                    </a>
+                </button>
+
+
+
+                <a id="kick">
+                    Marcação:
+                </a>
+
+                <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star1" id="s1">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star2" id="s2">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star3" id="s3">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star4" id="s4">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star5" id="s5">
+                    </a>
+                </button>
+
+            </div>
+
+            <div style="display: flex;" class="col-sm-12">
+
+                <a id="kick">
+                    Passe:
+                </a>
+
+                <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star1" id="s1">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star2" id="s2">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star3" id="s3">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star4" id="s4">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star5" id="s5">
+                    </a>
+                </button>
+
+
+
+                <a id="kick">
+                    Corrida:
+                </a>
+
+                <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star1" id="s1">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star2" id="s2">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star3" id="s3">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star4" id="s4">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star5" id="s5">
+                    </a>
+                </button>
+            </div>
+            <div style="display: flex;" class="col-sm-12">
+
+                <a id="kick">
+                    Drible:
+                </a>
+
+                <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star1" id="s1">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star2" id="s2">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star3" id="s3">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star4" id="s4">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star5" id="s5">
+                    </a>
+                </button>
+
+                <a id="kick">
+                    Raça:
+                </a>
+
+                <button color="white" (click)="avaliar(1)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star1" id="s1">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(2)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star2" id="s2">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(3)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star3" id="s3">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(4)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star4" id="s4">
+                    </a>
+                </button>
+                <button color="white" (click)="avaliar(5)" class="btn-acessar">
+                    <a>
+                        <img width="30" [src]="star5" id="s5">
+                    </a>
+                </button>
+            </div>
+        </div>
+        <button color="white" (click)="previous()" class="button">
+            <mat-icon>
+                keyboard_arrow_right
+            </mat-icon>
+        </button>
+    </div>
+
+</div>
